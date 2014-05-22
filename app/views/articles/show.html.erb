@@ -1,0 +1,10 @@
+<html>
+<% if @article.banner == "" %>
+<div class = "banner"><img src = "http://thegraphicsfairy.com/wp-content/uploads/blogger/-tTdDgT8Yqs8/T-y8RLgnA4I/AAAAAAAASf8/jezkdE_pcjI/s1600/arcbanner-vintageimage-Graphics-Fairy008b.jpg" /></div>
+<% else %>
+<div class = "banner"><img src = "<%= @article.banner %>" /></div>
+<% end %>
+<h1><%= @article.author %>'s <%= @article.title %></h1>
+<p><%= debug @article %> <p>
+<%= link_to 'Show all articles', articles_path %>
+</html>

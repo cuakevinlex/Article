@@ -1,0 +1,14 @@
+<html>
+<head><title>Edit Article</title></head>
+<h1>Edit Article</h1>
+<body>
+<%= simple_form_for @article do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :published_at %>
+  <%= f.input :content %>
+  <%= f.input :banner %>
+  <%= f.button :submit %>
+<% end %>
+</body>
+</html>

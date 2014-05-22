@@ -1,0 +1,14 @@
+<html>
+<head><title>Create Article</title></head>
+<h1>New Article</h1>
+<body>
+<%= simple_form_for Article.new do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :published_at %>
+  <%= f.input :content %>
+  <%= f.input :banner %>
+  <%= f.button :submit %>
+<% end %>
+</body>
+</html>
